@@ -1,14 +1,12 @@
 ---
 layout: default
+title: Home
 ---
 
-<h1>{{ site.title }}</h1>
-<p>{{ site.description }}</p>
+Welcome to my blog!
 
-<ul>
-  {% for post in /_posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+Here are my recent posts:
+
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
