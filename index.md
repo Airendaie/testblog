@@ -6,7 +6,7 @@ layout: default
 <p>{{ site.description }}</p>
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in /posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
