@@ -7,6 +7,6 @@ Welcome to my blog!
 
 Here are my recent posts:
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts %}
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
